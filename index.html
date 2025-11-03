@@ -2,12 +2,85 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Projeto Git</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Guia Git e GitHub</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Olá, Git e GitHub!</h1>
-  <button id="meuBotao">Clique aqui</button>
-  <script src="script.js"></script>
+  <header>
+    <h1>🧩 O que é Git e GitHub?</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <p><strong>Git</strong> → é um sistema de controle de versão. Ele registra todas as alterações feitas no seu código, permitindo voltar atrás, comparar versões e trabalhar em equipe sem bagunça.</p>
+      <p><strong>GitHub</strong> → é uma plataforma online que hospeda repositórios Git. Ele facilita o compartilhamento de projetos, colaboração entre desenvolvedores e até a publicação de sites via GitHub Pages.</p>
+    </section>
+
+    <section id="fluxo">
+      <h2>⚙️ Fluxo Básico de Trabalho</h2>
+      <ul>
+        <li>Criar ou clonar um repositório</li>
+        <li>Fazer alterações nos arquivos</li>
+        <li>Adicionar essas alterações ao staging</li>
+        <li>Criar um commit (salvar no histórico)</li>
+        <li>Enviar para o GitHub (push)</li>
+        <li>Atualizar sua máquina com mudanças do GitHub (pull)</li>
+      </ul>
+    </section>
+
+    <section id="comandos">
+      <h2>📌 Principais Comandos do Git</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Explicação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>git init</td><td>Inicializa um repositório Git na pasta atual</td></tr>
+          <tr><td>git clone &lt;url&gt;</td><td>Clona um repositório existente do GitHub</td></tr>
+          <tr><td>git status</td><td>Mostra o estado atual dos arquivos</td></tr>
+          <tr><td>git add &lt;arquivo&gt;</td><td>Adiciona um arquivo específico ao staging</td></tr>
+          <tr><td>git add .</td><td>Adiciona todos os arquivos modificados</td></tr>
+          <tr><td>git commit -m "mensagem"</td><td>Cria um commit com mensagem</td></tr>
+          <tr><td>git log</td><td>Mostra o histórico de commits</td></tr>
+          <tr><td>git branch</td><td>Lista as branches</td></tr>
+          <tr><td>git checkout -b nome-branch</td><td>Cria e muda para nova branch</td></tr>
+          <tr><td>git checkout nome-branch</td><td>Troca de branch</td></tr>
+          <tr><td>git merge nome-branch</td><td>Junta branch com a atual</td></tr>
+          <tr><td>git remote add origin &lt;url&gt;</td><td>Conecta ao GitHub</td></tr>
+          <tr><td>git push -u origin main</td><td>Envia commits (primeira vez)</td></tr>
+          <tr><td>git push origin main</td><td>Envia commits subsequentes</td></tr>
+          <tr><td>git pull</td><td>Atualiza com mudanças do GitHub</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="exemplo">
+      <h2>🚀 Exemplo Prático</h2>
+      <pre>
+# Criar repositório local
+git init
+
+# Criar README.md e salvar
+echo "Olá, aprendendo Git e GitHub!" > README.md
+
+# Adicionar e commitar
+git add README.md
+git commit -m "primeiro commit"
+
+# Conectar ao GitHub
+git remote add origin https://github.com/seu-usuario/seu-repositorio.git
+
+# Enviar para o GitHub
+git push -u origin main
+      </pre>
+    </section>
+
+    <button id="btnGuia">Abrir Guia Oficial do GitHub</button>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

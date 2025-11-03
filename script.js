@@ -1,3 +1,3 @@
-document.getElementById("meuBotao").addEventListener("click", () => {
-  alert("Você clicou no botão! 🚀");
+document.getElementById("btnGuia").addEventListener("click", () => {
+  window.open("https://docs.github.com/pt", "_blank");
 });
